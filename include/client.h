@@ -6,7 +6,7 @@
 /*   By: lmariott <lmariott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 21:09:38 by lmariott          #+#    #+#             */
-/*   Updated: 2020/05/11 12:08:47 by lmariott         ###   ########.fr       */
+/*   Updated: 2020/05/14 17:22:39 by lmariott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,14 @@ void      close_client(void);
 
 typedef struct      s_clientinfo
 {
-  int     sock;
+  int								sock;
+	struct	addrinfo	*addr_info;
 }                   t_clientinfo;
 
 t_clientinfo      *get_clientinfo(void);
 void        exitclient(void);
 int         simple_exec(t_list *tokens, int sock);
+int								ft_puterror(char *error);
 int         client_cd(t_list *arg, int sock);
 int         client_ls(t_list *arg, int sock);
 int         client_pwd(t_list *arg, int sock);

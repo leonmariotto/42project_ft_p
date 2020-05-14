@@ -6,7 +6,7 @@
 #    By: lsimanau <lsimanau@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/07/14 14:00:58 by pemora            #+#    #+#              #
-#    Updated: 2020/05/11 15:46:54 by lmariott         ###   ########.fr        #
+#    Updated: 2020/05/14 17:22:59 by lmariott         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,8 @@ SRC1 := src/client/getservinfo.c\
         src/client/client_pwd.c\
         src/client/client_put.c\
         src/client/client_get.c\
-        src/client/connect.c
+        src/client/connect.c\
+				src/client/ft_puterror.c
 
 SRC2 := src/server/server_pwd.c\
         src/server/getservinfo.c\
@@ -38,7 +39,6 @@ SRC2 := src/server/server_pwd.c\
         src/server/server_putfile.c\
         src/server/server_loop.c\
         src/server/init.c\
-        src/server/debug.c\
         src/server/server_getfile.c\
         src/server/server_cd.c\
         src/server/fork_server.c\

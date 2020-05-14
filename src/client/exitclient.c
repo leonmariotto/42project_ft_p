@@ -6,18 +6,18 @@
 /*   By: lmariott <lmariott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/10 21:09:06 by lmariott          #+#    #+#             */
-/*   Updated: 2020/05/10 21:35:20 by lmariott         ###   ########.fr       */
+/*   Updated: 2020/05/14 16:47:47 by lmariott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "client.h"
 
-void        exitclient(void)
+void								exitclient(void)
 {
-  t_clientinfo *c;
+	t_clientinfo *c;
 
-  c = get_clientinfo();
-  close(c->sock);
-  free(c);
-  exit(0);
+	c = get_clientinfo();
+	close(c->sock);
+	free(c);
+	exit(0);
 }

@@ -1,22 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   debug.c                                            :+:      :+:    :+:   */
+/*   ft_puterror.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmariott <lmariott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/03 21:04:33 by lmariott          #+#    #+#             */
-/*   Updated: 2020/05/09 19:55:12 by lmariott         ###   ########.fr       */
+/*   Created: 2020/05/14 17:22:11 by lmariott          #+#    #+#             */
+/*   Updated: 2020/05/14 17:22:26 by lmariott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "client.h"
 
-void      debug_printoctet(char *ptr, int n)
+int								ft_puterror(char *error)
 {
-  int i;
-
-  i = -1;
-  while(++i < n)
-    printf("Octet no %3d : %d\n", i, (int)ptr[i]);
+	ft_putendl_fd(error, 2);
+	return (1);
 }

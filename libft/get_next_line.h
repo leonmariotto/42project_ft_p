@@ -6,7 +6,7 @@
 /*   By: lmariott <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 15:55:55 by lmariott          #+#    #+#             */
-/*   Updated: 2019/01/31 10:33:00 by lmariott         ###   ########.fr       */
+/*   Updated: 2020/05/12 12:55:15 by lmariott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@
 
 int					get_next_line(const int fd, char **line);
 
-# define BUFF_SIZE 255
+# define BUFF_SIZE 1
 
 #endif

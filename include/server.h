@@ -6,7 +6,7 @@
 /*   By: lmariott <lmariott@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 21:09:38 by lmariott          #+#    #+#             */
-/*   Updated: 2020/05/11 12:13:36 by lmariott         ###   ########.fr       */
+/*   Updated: 2020/05/14 16:57:49 by lmariott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,8 +54,9 @@ typedef struct      s_clientloopinfo
 
 typedef struct      s_serverloopinfo
 {
-  t_list    *socket_used;
-  int       server_socket;
+  t_list							*socket_used;
+  int									server_socket;
+	struct addrinfo	*addr_info;
 }                   t_serverloopinfo;
 
 t_clientloopinfo        *get_clientloopinfo(void);
